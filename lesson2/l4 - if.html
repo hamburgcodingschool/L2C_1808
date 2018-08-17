@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var n1 = prompt("What is the 1st number?") * 1;
+        var n2 = prompt("What is the 2nd number?") * 1;
+        var n3 = prompt("What is the 3rd number?") * 1;
+
+        var big;
+
+        // BIGGEST OF 3
+        if (n1 > n2) {
+
+            if (n1 > n3) {
+                big = n1;
+            } else {
+                big = n3;
+            }
+
+        } else {
+
+            if (n2 > n3) {
+                big = n2;
+            } else {
+                big = n3;
+            }
+
+        }
+
+        document.write("<h2>The biggest number is " + big + "</h2>");
+    </script>
+</body>
+
+</html>
