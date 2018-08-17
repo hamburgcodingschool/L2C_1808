@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        //        
+        //        Prompt the user for a Number
+        //        Write the Timestable for that Number
+        //        
+        //        7 x 1 = 7
+        //        7 x 2 = 14
+        //        7 x 3 = 21
+        //        7 x 4 = 28
+        //        ...
+        //        7 x 10 = 70
+        //
+
+        var number = prompt("What number?") * 1;
+        
+        var counter = 0;
+        
+        document.write("<h1>Multiplication table for the number " + number + "</h1>");
+        
+        while (counter < 10) {
+            counter ++;
+            
+            var res = number * counter;
+            
+            document.write(number + " x " + counter + " = " + res + "<br>");
+        }
+    </script>
+</body>
+
+</html>

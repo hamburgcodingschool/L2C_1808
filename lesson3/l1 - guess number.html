@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var randomNumber = 87;
+        var triesLeft = 6;
+        
+        var userNumber = prompt("Guess the number you have " + triesLeft + " tries left") * 1;
+        
+        while (userNumber != randomNumber) {
+            if (userNumber > randomNumber) {
+                alert("Your number is too high!");
+            } else {
+                alert("Your number is too low!");
+            }
+            
+            triesLeft--; // triesLeft = triesLeft - 1;
+            
+            if (triesLeft == 0) {
+                break;
+            }
+            
+            userNumber = prompt("Guess the number you have " + triesLeft + " tries left") * 1;
+        }
+        
+        if (triesLeft == 0) {
+            document.write("<h1>BOO YOU SUCK!!!!!</h1>")    
+        } else {
+            document.write("<h1>YAY YOU WON!!!!!</h1>")    
+        }
+        
+        
+    </script>
+</body>
+
+</html>
