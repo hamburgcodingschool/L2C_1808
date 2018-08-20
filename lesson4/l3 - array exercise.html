@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        
+        // 0: 23
+        // 1: 12
+        // ...
+        
+        var numbers = [23, 12, 54, 10, 5, 25];
+        var sum = 0;
+        
+        var max = numbers[0];
+        var min = numbers[0];
+        
+        for (var i = 0; i < numbers.length; i++) {
+            document.write(i + ": " + numbers[i] + "<br>");
+            
+            sum = sum + numbers[i];
+            
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+            
+            if (numbers[i] < min) {
+                min = numbers[i];
+            }
+        }
+
+       document.write(min);
+        
+    </script>
+</body>
+
+</html>

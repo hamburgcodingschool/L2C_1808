@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // print numbers from 1 to 1000
+        // after each number print 'odd' or 'even' respectively
+        // for the numbers 1..10 write them after the odd or even
+        // for multiples of 5 write x5 after the odd or even
+        // for multiples of 10 x10 after the odd or even
+        // for multiples of 100 x100 after the odd or even
+        //
+        // 1 odd - one
+        // 2 even - two
+        // ...
+        // 5 odd - five x5
+        // ...
+        // 10 even - ten x10
+        // 11 odd
+        // ...
+        // 15 odd - x5
+        // ...
+
+        for (var i = 1; i <= 1000; i++) {
+
+            document.write(i);
+
+            if (i % 2 == 0) {
+                document.write(" even");
+            } else {
+                document.write(" odd");
+            }
+
+            if (i == 1) {
+                document.write(" - one");
+            } else if (i == 2) {
+                document.write(" - two");
+            } else if (i == 3) {
+                document.write(" - three");
+            } else if (i == 4) {
+                document.write(" - four");
+            } else if (i == 5) {
+                document.write(" - five");
+            } else if (i == 6) {
+                document.write(" - six");
+            } else if (i == 7) {
+                document.write(" - seven");
+            } else if (i == 8) {
+                document.write(" - eight");
+            } else if (i == 9) {
+                document.write(" - nine");
+            } else if (i == 10) {
+                document.write(" - ten");
+            }
+            
+            if (i % 100 == 0) {
+                document.write(" - x100");
+            } else if (i % 10 == 0) {
+                document.write(" - x10");
+            } else if (i % 5 == 0) {
+                document.write(" - x5");
+            }
+
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>

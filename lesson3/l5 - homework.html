@@ -11,7 +11,22 @@
         // IS IT A PRIME?
         // ask the user for a number and tell the user if it is a prime or not
         
+        var userNumber = prompt("Give me a number!") * 1;
+        var isPrime = true;
         
+        for (var i = 2; i <= Math.sqrt(userNumber); i++) {
+            if (userNumber % i == 0) {
+                // Not a prime since we found at least one divisor
+                isPrime = false;
+                break;
+            }
+        }
+        
+        if (isPrime) {
+            document.write("IT IS A PRIME");
+        } else {
+            document.write("IT IS NOT A PRIME");
+        }
     </script>
 </body>
 
