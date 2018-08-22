@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // Functions are perpetually awesome
+
+
+        function isPalindrome(word) {
+            for (var i = 0; i < word.length * 0.5; i++) {
+                var mirrorPos = word.length - 1 - i;
+                if (word[i] != word[mirrorPos]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        var userWord = prompt("GIMME WORDS DUDE!");
+        alert(isPalindrome(userWord));
+    </script>
+</body>
+
+</html>

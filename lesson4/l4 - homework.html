@@ -11,8 +11,20 @@
         
         // create an array with the first 20 fibonacci numbers
         
+        var number = 20;
         var fibo = [0, 1];
         
+        
+        // find out the fibo numbers
+        for (var i = 2; i < number; i++) {
+            fibo[i] = fibo[i - 1] + fibo[i -2];
+        }
+        
+        
+        // Printing the full fibo array
+        for (var i = 0; i < fibo.length; i++) {
+            document.write(i + 1 + ": " + fibo[i] + "<br>");
+        }
         
     </script>
 </body>

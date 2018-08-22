@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // Functions are still awesome
+
+        function prime(number) {
+            for (var i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        
+        var userNumber = prompt("DUDE WHAT'S THE NUMBER?") * 1;
+        alert( prime(userNumber) );
+        
+        
+    </script>
+</body>
+
+</html>
