@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // remove all the items that have at least one 'a' in the name
+
+        function wordContainsLetter(word, letter) {
+            for (var i = 0; i < word.length; i++) {
+                if (word[i] == letter) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        
+        
+        var names = ["Sarah", "Ferdinand", "Luke", "Helder"];
+        var newNames = [];
+        
+        for (var i = 0; i < names.length; i++) {
+            if (wordContainsLetter(names[i], "a")) {
+                newNames.push(names[i]);
+            }
+        }
+        
+        alert(names);
+        alert(newNames);
+        
+        
+    </script>
+</body>
+
+</html>

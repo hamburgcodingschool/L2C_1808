@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // ask the user for a string and reverse it
+
+
+        function reverseTheString(text) {
+            
+            var newWord = [];
+            for (var i = text.length - 1; i >= 0; i--) {
+                newWord += text[i]; // newWord = newWord + text[i];
+            }
+            return newWord;
+        }
+        
+        var userWord = prompt("GIMME WORDS DUDE!");
+        
+        if (userWord == reverseTheString(userWord)) {
+            alert("ITS A PALINDROME")
+        } else {
+            alert("ITS JUST A WORD...")
+        }
+        
+    </script>
+</body>
+
+</html>
