@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // Random numbers
+
+        //        
+        //        function randomize(min, max) {
+        //            
+        //            var x = Math.random() * (max + 1 - min);
+        //
+        //            x = Math.floor(x);
+        //            
+        //            x = x + min;
+        //            
+        //            return x;
+        //        }
+
+        function randomize(min, max) {
+            return Math.floor(Math.random() * (max + 1 - min)) + min;
+        }
+
+
+
+        // INITIALIZE
+        var counters = [];
+        for (var i = 0; i < 10; i++) {
+            counters[i] = 0;
+        }
+
+        // COUNT HOW MANY TIMES EACH NUMBER APPEARS AND STORE IN ARRAY
+        for (var i = 0; i < 10000; i++) {
+            var x = randomize(0, 9);
+            counters[x]++;
+        }
+
+        // PRINT
+        for (var i = 0; i < 10; i++) {
+            document.write(i + ": " + counters[i]);
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>
