@@ -31,33 +31,37 @@
             }
         }
 
-        // PRINT IT
+        // calculate the sums
 
+        var lineSums = [0, 0, 0];
+        var colSums = [0, 0, 0];
 
         for (var i = 0; i < 3; i++) {
-            var sum = 0;
+            for (var j = 0; j < 3; j++) {
+                lineSums[i] += matrix[i][j];
+                colSums[j] += matrix[i][j];
+            }
+        }
+
+        // print it out
+
+        for (var i = 0; i < 3; i++) {
             for (var j = 0; j < 3; j++) {
                 if (j > 0) {
                     document.write(" + ");
                 }
                 document.write(matrix[i][j]);
-
-                sum += matrix[i][j];
             }
             document.write(" = ");
-            document.write(sum);
+            document.write(lineSums[i]);
             document.write("<br>");
         }
 
         document.write("&nbsp;=&nbsp;&nbsp;=&nbsp;&nbsp;=<br>");
 
         for (var i = 0; i < 3; i++) {
-            var sum = 0;
-            for (var j = 0; j < 3; j++) {
-                sum += matrix[j][i];
-            }
             document.write(" ");
-            document.write(sum);
+            document.write(colSums[i]);
         }
     </script>
 </body>

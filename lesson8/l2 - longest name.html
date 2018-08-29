@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+       
+        var names = ["Helder", "Sarah", "Ferdinand", "Luke"];
+        
+        var maxPos = 0;
+        
+        for (var i = 0; i < names.length; i++) {
+            if (names[i].length > names[maxPos].length) {
+                maxPos = i;
+            }
+        }
+        
+        alert(names[maxPos]);
+        
+    </script>
+</body>
+
+</html>

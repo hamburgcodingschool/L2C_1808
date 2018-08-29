@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // OBJECT TEMPLATE IN JS (other langs usually called CLASS)
+        
+        
+        function Rectangle(width, length) {
+            this.width = width;
+            this.length = length;
+            
+            this.area = function() {
+                return this.width * this.length;
+            }
+            
+            this.perimeter = function() {
+                return (this.width + this.length) * 2;
+            }
+        }
+        
+        var rect1 = new Rectangle(5, 15);
+        
+        var rect2 = new Rectangle();
+        rect2.width = 2;
+        rect2.length = 2;
+        
+        alert(rect1.area());
+        alert(rect2.area())
+    </script>
+</body>
+
+</html>
